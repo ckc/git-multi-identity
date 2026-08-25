@@ -14,6 +14,6 @@
 #                   automatically get this identity's name/email via git includeIf
 #
 # name|ssh_host_alias|real_host|key_filename|git_name|git_email|path_glob
-work|github-do|github.internal.digitalocean.com|id_ed25519_do_work|Jack Chan|jchan@digitalocean.com|~/work/**
+work|github-wk|github.internal.dev|id_ed25519_dev_work|Jack Chan|jack@ckc.im|~/work/**
 personal-github|github-personal|github.com|id_ed25519_personal_gh|Jack Chan|CHANGE_ME@personal-email.com|~/personal/**
 personal-gitlab|gitlab-personal|gitlab.com|id_ed25519_personal_gl|Jack Chan|CHANGE_ME@personal-email.com|~/personal/**
