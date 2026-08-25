@@ -17,7 +17,7 @@ agent required.
   `user.name`/`user.email` is applied automatically — no more accidentally
   committing with the wrong email.
 - **`insteadOf` URL rewriting** so you can `git clone` using the real
-  hostname (`git@github.internal.digitalocean.com:...`) and git transparently
+  hostname (`git@github.internal.dev:...`) and git transparently
   rewrites it to the aliased host that carries the right key. You don't have
   to remember alias names when cloning.
 - **Encrypted backup/restore** with [age](https://github.com/FiloSottile/age)
@@ -60,7 +60,7 @@ $EDITOR identities.conf     # fill in your personal emails
 The script prints each public key it generates. Add each one to the matching
 platform:
 
-- GitHub Enterprise: `https://github.internal.digitalocean.com/settings/keys`
+- GitHub Enterprise: `https://github.internal.dev/settings/keys`
 - GitHub.com: `https://github.com/settings/keys`
 - GitLab.com: `https://gitlab.com/-/profile/keys`
 
@@ -68,8 +68,8 @@ Then:
 
 ```bash
 mkdir -p ~/work ~/personal
-ssh -T git@github-do            # verify each host alias works
-git clone git@github.internal.digitalocean.com:org/repo.git ~/work/repo
+ssh -T git@github-wk            # verify each host alias works
+git clone git@github.internal.dev:org/repo.git ~/work/repo
 ```
 
 `setup.sh` is idempotent — re-run it any time after editing `identities.conf`
